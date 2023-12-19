@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Make changes to pull request
-        run: date +%s > report.txt
+      # - name: Make changes to pull request
+      #   run: date +%s > report.txt
         
       - name: Auto Create Pull Request
         id: cpr
@@ -24,7 +24,7 @@ jobs:
           # committer: GitHub <noreply@github.com>
           # author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           # signoff: false
-          branch: main
+          branch: release/2023.1.0
           # delete-branch: true
           # title: '[Example] Update report'
           # body: |
