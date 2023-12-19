@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: create pull request
       run: gh pr create -B main -H release/2023.1.0 --title 'Merge release branch into main branch' --body 'Created by Github action'
+      env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
       
       # - name: Make changes to pull request
       #   run: date +%s > report.txt
