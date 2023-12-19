@@ -24,7 +24,7 @@ jobs:
           # committer: GitHub <noreply@github.com>
           # author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           # signoff: false
-          branch: release/2023.1.0
+          branch: feature/search/2023.1.0
           # delete-branch: true
           # title: '[Example] Update report'
           # body: |
