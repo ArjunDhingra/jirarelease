@@ -7,7 +7,7 @@ on:
 
 jobs:
   sync-branches:
-    if: github.event.pull_request.merged == true
+    if: ${{ (github.ref == 'release/2023.4.0') && (github.event.pull_request.merged == true) }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
